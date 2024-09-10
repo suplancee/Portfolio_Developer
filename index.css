@@ -1,0 +1,230 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+.cover-photo {
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* main section area */
+#landing {
+    position: relative;
+    background-image: url('https://media.licdn.com/dms/image/v2/C561BAQGpxRlo9gp3cQ/company-background_10000/company-background_10000/0/1585466636525/withel_cover?e=2147483647&v=beta&t=PCEp6-UUEB0lzhUbmL5dbMVtc2B5JCBUGeAczZHQYQw');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+#landing .container {
+    position: relative;
+    z-index: 2; 
+}
+
+#profile{
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Navbar Area */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+    z-index: 1040;
+}
+
+.navbar .navbar-brand {
+    color: #17a2b8; 
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #f1f1f1;
+    padding: 0 10px; 
+    transition: color 0.3s ease;
+    font-size: 1rem; 
+    text-transform: uppercase;
+    
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link {
+    color: #17a2b8; 
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-collapse {
+    text-align: right; 
+}
+
+.navbar-collapse .navbar-nav {
+    margin-top: 15px;
+}
+
+.navbar-collapse .nav-item {
+    margin-left: 10px; 
+}
+
+
+/* project area */
+.projects .card {
+    margin-bottom: 15px;
+}
+
+.projects{
+    padding: 60px 0;
+}
+
+/* tools area */
+.tools {
+    padding: 60px 0;
+}
+
+.tool-card {
+    background-color: #218380;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tool-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* contact area */
+.social-links a {
+    color: #fff; 
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s; 
+}
+
+.social-links a:hover {
+    color: #b13c3c; 
+}
+
+/* about me area */
+.about{
+    padding: 100px 0;
+}
+
+/* Contact Area */
+
+.contact{
+    padding: 60px 0;
+}
+
+/* Foods I Like Section */
+.foods {
+    padding: 60px 0;
+}
+
+.food-card {
+    background-color: #9e4848;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 20px;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.food-card img {
+    height: 150px; 
+    object-fit: cover; 
+}
+
+/* offcanvas area */
+
+.offcanvas-header {
+    margin-top: 5rem; 
+}
+
+.offcanvas-title {
+    margin-bottom: 4rem;
+}
+
+.btn-close {
+    margin-top: 1rem; 
+}
+
+.offcanvas-body{
+    margin-top: 3rem;
+}
+
+
+/* Skills Section */
+
+  
+  #skills h2 {
+    font-size: 2.5rem;
+    color: #17a2b8;
+  }
+  
+  .progress {
+    background-color: #e9ecef;
+    height: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    background-color: #216fbd;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+ 
